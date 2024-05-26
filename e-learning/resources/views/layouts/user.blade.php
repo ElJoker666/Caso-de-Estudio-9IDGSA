@@ -70,14 +70,29 @@
                     <!-- Secondary Navigation and Additional Elements -->
                     <div class="hidden md:flex items-center space-x-4">
                         <!-- Authentication Links -->
+                        @auth
+                        <div class="relative">
+                            <button class="text-gray-300 hover:bg-gray-600 hover:text-white px-4 py-3 rounded-md text-base font-medium" onclick="toggleDropdown(3)">{{ Auth::user()->name }} <i class="bi bi-caret-down-fill"></i></button>
+                            <div class="absolute z-10 -ml-4 mt-3 transform w-48 py-2 bg-white rounded-md shadow-lg hidden" id="dropdownContent3">
+                                <!-- Dropdown Content -->
+                                <a href="{{ route('profile.edit') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-user"></i> - Perfil</a>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button type="submit" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-sign-out-alt"></i> - Cerrar Sesión</button>
+                                </form>
+                            </div>
+                        </div>
+                        @else
                         <div class="ml-4 flex items-center">
                             <a href="/login" class="font-semibold text-white px-4 py-3 rounded-md text-base font-medium bg-blue-600 hover:bg-blue-700 active:bg-blue-800"><i class="fas fa-sign-in-alt"></i> Log in</a>
                             <a href="/register" class="ml-4 font-semibold text-white px-4 py-3 rounded-md text-base font-medium bg-green-600 hover:bg-green-700 active:bg-green-800"><i class="fas fa-user-plus"></i> Register</a>
                         </div>
+                        @endauth
                     </div>
                 </div>
             </div>
         </nav>
+        
         <script>
             // Función para cerrar todos los dropdowns abiertos
             function closeDropdowns() {

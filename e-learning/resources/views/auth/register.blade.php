@@ -39,27 +39,32 @@
             <!-- Left Column -->
             <div class="w-1/2 p-8">
                 <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Registro</h2>
-                <form action="/register" method="POST">
+                <form method="POST" action="{{ route('register') }}">
+                    @csrf
                     <div class="mb-4">
                         <label for="name" class="block text-sm font-medium mb-2 text-gray-900">Nombre Completo</label>
-                        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" :value="old('name')" required autofocus autocomplete="name">
+                        <x-input-error :messages="$errors->get('name')" class="mt-2" />
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-sm font-medium mb-2 text-gray-900">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" :value="old('email')" required autocomplete="username">
+                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
                     <div class="mb-4">
                         <label for="password" class="block text-sm font-medium mb-2 text-gray-900">Contraseña</label>
-                        <input type="password" id="password" name="password" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="password" id="password" name="password" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required autocomplete="new-password">
+                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>
                     <div class="mb-6">
-                        <label for="confirm_password" class="block text-sm font-medium mb-2 text-gray-900">Confirmar Contraseña</label>
-                        <input type="password" id="confirm_password" name="confirm_password" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <label for="password_confirmation" class="block text-sm font-medium mb-2 text-gray-900">Confirmar Contraseña</label>
+                        <input type="password" id="password_confirmation" name="password_confirmation" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required autocomplete="new-password">
+                        <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                     </div>
                     <button type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md">Registrarse</button>
                 </form>
                 <p class="mt-6 text-center text-sm text-gray-900">
-                    ¿Ya tienes una cuenta? <a href="/login" class="text-blue-500 hover:underline">Inicia Sesión</a>
+                    ¿Ya tienes una cuenta? <a href="{{ route('login') }}" class="text-blue-500 hover:underline">Inicia Sesión</a>
                 </p>
             </div>
             <!-- Right Column -->

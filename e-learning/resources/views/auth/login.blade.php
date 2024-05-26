@@ -37,35 +37,47 @@
     <div class="flex justify-center items-center min-h-screen py-16">
         <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl flex">
             <!-- Left Column -->
-            <div class="w-1/2 bg-blue-600 text-white p-8 rounded-l-lg flex flex-col justify-center">
-                <h2 class="text-3xl font-bold mb-4">Bienvenido a E-learning</h2>
-                <p class="text-lg mb-8">Empieza a aprender hoy. Accede a cientos de cursos y recursos para mejorar tus habilidades.</p>
-                <img src="your-image-path.jpg" alt="E-learning Image" class="rounded-md">
-            </div>
-            <!-- Right Column -->
             <div class="w-1/2 p-8">
                 <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Iniciar Sesión</h2>
-                <form action="/login" method="POST">
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+
+                    <!-- Email Address -->
                     <div class="mb-4">
                         <label for="email" class="block text-sm font-medium mb-2 text-gray-900">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" :value="old('email')" required autofocus autocomplete="username">
+                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
+
+                    <!-- Password -->
                     <div class="mb-6">
                         <label for="password" class="block text-sm font-medium mb-2 text-gray-900">Contraseña</label>
-                        <input type="password" id="password" name="password" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="password" id="password" name="password" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required autocomplete="current-password">
+                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>
+
+                    <!-- Remember Me -->
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center">
                             <input type="checkbox" id="remember_me" name="remember_me" class="text-blue-500 focus:ring-2 focus:ring-blue-500 h-4 w-4 rounded">
                             <label for="remember_me" class="ml-2 text-sm font-medium text-gray-900">Recuérdame</label>
                         </div>
-                        <a href="#" class="text-sm text-blue-500 hover:underline">¿Olvidaste tu contraseña?</a>
+                        @if (Route::has('password.request'))
+                            <a href="{{ route('password.request') }}" class="text-sm text-blue-500 hover:underline">¿Olvidaste tu contraseña?</a>
+                        @endif
                     </div>
+
                     <button type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md">Iniciar Sesión</button>
                 </form>
                 <p class="mt-6 text-center text-sm text-gray-900">
                     ¿No tienes una cuenta? <a href="/register" class="text-blue-500 hover:underline">Regístrate</a>
                 </p>
+            </div>
+            <!-- Right Column -->
+            <div class="w-1/2 bg-blue-600 text-white p-8 rounded-r-lg flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-4">Bienvenido a E-learning</h2>
+                <p class="text-lg mb-8">Empieza a aprender hoy. Accede a cientos de cursos y recursos para mejorar tus habilidades.</p>
+                <img src="your-image-path.jpg" alt="E-learning Image" class="rounded-md">
             </div>
         </div>
     </div>
@@ -117,3 +129,4 @@
     </footer>
 </body>
 </html>
+
