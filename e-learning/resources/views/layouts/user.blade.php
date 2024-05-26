@@ -111,30 +111,47 @@
 </body>
 <br>
 <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-                <h2 class="text-lg font-bold mb-2">E-learning</h2>
-                <p class="text-sm">En E-learning, creemos en proporcionar educación de alta calidad accesible desde cualquier parte del mundo. ¡Únete a nuestros cursos y comienza a aprender hoy mismo!</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between">
+            <!-- Logo and Description -->
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-lg font-bold mb-2">E-learning</h3>
+                <p class="text-sm">Ofrecemos una amplia gama de cursos en línea para ayudarte a alcanzar tus metas educativas y profesionales.</p>
             </div>
-            <div>
-                <h2 class="text-lg font-bold mb-2">Información de Contacto</h2>
-                <p class="text-sm"><i class="fas fa-map-marker-alt"></i> 123 Calle Principal, Ciudad, País</p>
-                <p class="text-sm"><i class="fas fa-phone"></i> +1 123-456-7890</p>
-                <p class="text-sm"><i class="fas fa-envelope"></i> soporte@elearning.com</p>
+            <!-- Navigation Links -->
+            <div class="flex space-x-8">
+                <div>
+                    <h4 class="font-semibold mb-2">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-white">Inicio</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Cursos</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Soporte</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Términos del Servicio</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Cookies</a></li>
+                    </ul>
+                </div>
             </div>
+            <!-- Social Media Links -->
             <div>
-                <h2 class="text-lg font-bold mb-2">Síguenos</h2>
-                <ul class="flex justify-center space-x-4">
-                    <li><a href="#" class="text-blue-500 hover:text-blue-600"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#" class="text-blue-500 hover:text-blue-600"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#" class="text-blue-500 hover:text-blue-600"><i class="bi bi-twitter"></i></a></li>
-                </ul>
+                <h4 class="font-semibold mb-2">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
             </div>
         </div>
-        <hr class="mt-4 mb-2 border-gray-600">
-        <p class="text-sm">&copy; 2024 E-learning. Todos los derechos reservados.</p>
+        <div class="mt-8 text-center text-sm text-gray-500">
+            <p>© 2024 E-learning. Todos los derechos reservados.</p>
+        </div>
     </div>
 </footer>
-
 </html>
