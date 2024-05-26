@@ -62,10 +62,17 @@
                             <input type="checkbox" id="remember_me" name="remember_me" class="text-blue-500 focus:ring-2 focus:ring-blue-500 h-4 w-4 rounded">
                             <label for="remember_me" class="ml-2 text-sm font-medium text-gray-900">Recuérdame</label>
                         </div>
+
+
                         @if (Route::has('password.request'))
                             <a href="{{ route('password.request') }}" class="text-sm text-blue-500 hover:underline">¿Olvidaste tu contraseña?</a>
                         @endif
                     </div>
+
+                    <div class="form-group mt-3 center">
+                        {!! NoCaptcha::renderJs() !!}
+                        {!! NoCaptcha::display() !!}
+                    </div><br>
 
                     <button type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md">Iniciar Sesión</button>
                 </form>
