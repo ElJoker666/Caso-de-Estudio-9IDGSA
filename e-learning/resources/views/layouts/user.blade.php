@@ -36,8 +36,8 @@
                                 <button class="text-gray-300 hover:bg-gray-600 hover:text-white px-4 py-3 rounded-md text-base font-medium" onclick="toggleDropdown(0)">Inicio <i class="bi bi-caret-down-fill"></i></button>
                                 <div class="absolute z-10 -ml-4 mt-3 transform w-48 py-2 bg-white rounded-md shadow-lg hidden" id="dropdownContent0">
                                     <!-- Dropdown Content -->
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-home"></i> - Home</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-book"></i> - Cursos</a>
+                                    <a href="{{ url('/') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-home"></i> - Home</a>
+                                    <a href="{{ url('/cursos') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-book"></i> - Cursos</a>
                                 </div>
                             </div>
                             <!-- Dropdown 2 -->

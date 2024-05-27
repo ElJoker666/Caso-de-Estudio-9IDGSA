@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,21 @@ Route::get('/', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
+
+Route::get('/cursos', function () {
+    return view('cursos');
+});
+
+Route::get('/error', function () {
+    return view('error');
+});
+
+Route::get('/busqueda', function () {
+    return view('busqueda');
+});
+
+Route::post('/contacto', [ContactoController::class, 'guardarInformacion'])->name('guardarInformacion');
+
 
 Route::get('/index', 'App\Http\Controllers\PusherController@index');
 Route::post('/broadcast', 'App\Http\Controllers\PusherController@broadcast');

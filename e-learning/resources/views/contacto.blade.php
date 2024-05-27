@@ -17,26 +17,28 @@
             <!-- Columna 2: Formulario de Contacto -->
             <div>
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden p-8">
-                    <form>
+                    <form action="{{ route('guardarInformacion') }}" method="POST">
+                        @csrf <!-- Asegúrate de incluir el token CSRF para proteger tu formulario -->
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-900">Nombre</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="text" id="name" name="nombre" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
-
+                    
                         <div class="mb-4">
                             <label for="email" class="block text-sm font-medium text-gray-900">Correo Electrónico</label>
                             <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
-
+                    
                         <div class="mb-6">
                             <label for="message" class="block text-sm font-medium text-gray-900">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            <textarea id="message" name="mensaje" rows="4" class="w-full px-4 py-2 rounded-md bg-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                         </div>
-
+                    
                         <div class="flex items-center justify-end">
                             <button type="submit" class="py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md">Enviar Mensaje</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
