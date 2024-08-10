@@ -11,7 +11,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Curso de Matemáticas -->
             <div class="bg-white shadow-xl rounded-lg overflow-hidden relative">
-                <img src="curso-matematicas.jpg" alt="Curso de Matemáticas" class="w-full h-64 object-cover">
+                <img src="https://th.bing.com/th/id/OIP.Sdf4yv18X6WeNzQvH9u7swHaEo?rs=1&pid=ImgDetMain" alt="Curso de Matemáticas" class="w-full h-64 object-cover">
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                     <a href="#" class="text-white font-semibold">Ver detalles</a>
                 </div>

@@ -18,19 +18,19 @@
             <!-- Columna 2: Sección de imágenes -->
             <div class="grid grid-cols-3 gap-4">
                 <div class="relative">
-                    <img src="imagen1.jpg" alt="Curso 1" class="rounded-lg w-full h-64 object-cover">
+                    <img src="https://st2.depositphotos.com/3580719/10635/v/950/depositphotos_106356176-stock-illustration-seamless-background-with-formulas-and.jpg" alt="Curso 1" class="rounded-lg w-full h-64 object-cover">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                         <a href="#" class="text-white font-semibold">Ver detalles</a>
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="imagen2.jpg" alt="Curso 2" class="rounded-lg w-full h-64 object-cover">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/468/875/original/science-concept-flat-vector.jpg" alt="Curso 2" class="rounded-lg w-full h-64 object-cover">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                         <a href="#" class="text-white font-semibold">Ver detalles</a>
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="imagen3.jpg" alt="Curso 3" class="rounded-lg w-full h-64 object-cover">
+                    <img src="https://portalacademico.cch.unam.mx/sites/default/files/portadas/2019-07/HistoriaUniversal1-Portada.jpg" alt="Curso 3" class="rounded-lg w-full h-64 object-cover">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                         <a href="#" class="text-white font-semibold">Ver detalles</a>
                     </div>
@@ -44,13 +44,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card 1 -->
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden relative">
-                    <img src="curso1.jpg" alt="Curso 1" class="w-full h-64 object-cover">
+                    <img src="https://th.bing.com/th/id/OIP.SA5Yb9rn6dYMrtEidpNbNQHaHa?rs=1&pid=ImgDetMain" alt="Curso 1" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                         <a href="#" class="text-white font-semibold">Ver detalles</a>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Nombre del Curso</h3>
-                        <p class="text-gray-700 mb-6">Descripción breve del curso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 class="text-xl font-semibold mb-4">Curso de Matemáticas</h3>
+                        <p class="text-gray-700 mb-6">Aprende los conceptos fundamentales de matemáticas y mejora tu habilidad para resolver problemas.</p>
                         <div class="flex items-center justify-center mb-4">
                             <p class="text-2xl font-semibold text-blue-500">$99</p>
                         </div>
@@ -58,43 +58,43 @@
                 </div>
                 <!-- Card 2 -->
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden relative">
-                    <img src="curso1.jpg" alt="Curso 1" class="w-full h-64 object-cover">
+                    <img src="https://th.bing.com/th/id/R.fd9bfc64afa34fc1481aee3e3ac481e3?rik=GIENcqGs5WxS1g&pid=ImgRaw&r=0" alt="Curso 1" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                         <a href="#" class="text-white font-semibold">Ver detalles</a>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Nombre del Curso</h3>
-                        <p class="text-gray-700 mb-6">Descripción breve del curso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 class="text-xl font-semibold mb-4">Curso de Ciencias</h3>
+                        <p class="text-gray-700 mb-6">Explora los principios básicos de la ciencia y realiza experimentos prácticos para entender el mundo que te rodea.</p>
                         <div class="flex items-center justify-center mb-4">
-                            <p class="text-2xl font-semibold text-blue-500">$99</p>
+                            <p class="text-2xl font-semibold text-blue-500">$79</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden relative">
-                    <img src="curso1.jpg" alt="Curso 1" class="w-full h-64 object-cover">
+                    <img src="https://th.bing.com/th/id/R.304d3de6a5bdd33de5f93fee85c9cf6a?rik=U43FzynYv8%2fE%2bw&riu=http%3a%2f%2fpep.ieepo.oaxaca.gob.mx%2frecursos%2fmultimedia%2fILCE_Biblioteca_digital%2fColibri%2ftumba%2fimgs%2f10.jpg&ehk=z%2fBlOeaSmYGf4KqGYYOM5DPHzXPPSZKxn%2bT21LZhyAs%3d&risl=&pid=ImgRaw&r=0" alt="Curso 1" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                         <a href="#" class="text-white font-semibold">Ver detalles</a>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Nombre del Curso</h3>
-                        <p class="text-gray-700 mb-6">Descripción breve del curso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 class="text-xl font-semibold mb-4">Curso de Historia</h3>
+                        <p class="text-gray-700 mb-6">Descubre los eventos más importantes de la historia mundial y comprende cómo han moldeado el presente.</p>
                         <div class="flex items-center justify-center mb-4">
-                            <p class="text-2xl font-semibold text-blue-500">$99</p>
+                            <p class="text-2xl font-semibold text-blue-500">$89</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 4 -->
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden relative">
-                    <img src="curso1.jpg" alt="Curso 1" class="w-full h-64 object-cover">
+                    <img src="https://www.elsoldetampico.com.mx/incoming/udte7j-shutterstock_637031407.jpg/ALTERNATES/LANDSCAPE_1140/shutterstock_637031407.jpg" alt="Curso 1" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300">
                         <a href="#" class="text-white font-semibold">Ver detalles</a>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-4">Nombre del Curso</h3>
-                        <p class="text-gray-700 mb-6">Descripción breve del curso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 class="text-xl font-semibold mb-4">Curso de Idiomas</h3>
+                        <p class="text-gray-700 mb-6">Aprende un nuevo idioma de manera efectiva y comunícate con confianza en situaciones cotidianas y profesionales.</p>
                         <div class="flex items-center justify-center mb-4">
-                            <p class="text-2xl font-semibold text-blue-500">$99</p>
+                            <p class="text-2xl font-semibold text-blue-500">$69</p>
                         </div>
                     </div>
                 </div>
@@ -141,5 +141,6 @@
     </section>
 
 </main>
+
 
 @endsection

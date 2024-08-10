@@ -36,6 +36,10 @@ Route::get('/busqueda', function () {
     return view('busqueda');
 });
 
+Route::get('/faq', function () {
+    return view('faq');
+});
+
 Route::post('/contacto', [ContactoController::class, 'guardarInformacion'])->name('guardarInformacion');
 
 

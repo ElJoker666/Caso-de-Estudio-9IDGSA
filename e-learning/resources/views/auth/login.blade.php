@@ -84,7 +84,7 @@
             <div class="w-1/2 bg-blue-600 text-white p-8 rounded-r-lg flex flex-col justify-center">
                 <h2 class="text-3xl font-bold mb-4">Bienvenido a E-learning</h2>
                 <p class="text-lg mb-8">Empieza a aprender hoy. Accede a cientos de cursos y recursos para mejorar tus habilidades.</p>
-                <img src="your-image-path.jpg" alt="E-learning Image" class="rounded-md">
+                <img src="https://cdn-icons-png.flaticon.com/512/9408/9408094.png" alt="E-learning Image" class="rounded-md">
             </div>
         </div>
     </div>

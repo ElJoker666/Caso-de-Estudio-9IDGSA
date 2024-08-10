@@ -57,7 +57,7 @@
                                 <div class="absolute z-10 -ml-4 mt-3 transform w-48 py-2 bg-white rounded-md shadow-lg hidden" id="dropdownContent2">
                                     <!-- Dropdown Content -->
                                     <a href="{{ url('/index') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-hands-helping"></i> - Soporte</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-question-circle"></i> - FAQs</a>
+                                    <a href="{{ url('/faq') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-question-circle"></i> - FAQs</a>
                                     <a href="{{ url('/contacto') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><i class="fas fa-envelope"></i> - Contacto</a>
                                 </div>
                             </div>
